@@ -1,18 +1,47 @@
-header{
+/* body{
     display: flex;
+    flex-direction: column;
+} */
+
+.header{
+    margin: 0;
     background-color: aqua;
-    margin-bottom: 10px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px ;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    
 }
 
 .box{
-    display: flex;
-    background-color: lightgray;
-    border:black 10px;
+    width: 100%;
+    border:1px solid lightgray;
     padding: 10px 10px 10px 10px;
+    margin: 10px 25px 25px 20px;
+
+
+
 }
-.button {
-    border: 0;
+
+.item-container {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item{
+    border-style: solid;
+    padding: 10px 10px 10px 10px;
+    border:1px solid lightgray;
+    height: 15px;
+}
+
+#button {
+    border: none;
     padding: 5px 5px;
     background-color: #2ddadf;
     width: 75px;

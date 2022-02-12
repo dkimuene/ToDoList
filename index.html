@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="src/style.css">
-    <script src="/src/scripts.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>To Do List</h1>
-    </header>
-    <section class="box">
-        <form action="">
-            <h2>Add Items</h2>
-            <div>
-                <div>
-                    <label for="item"></label>
-                    <input type="text" id="item" name="items">
-                    <input  class="button "type="Submit" value="Submit">
-                </div>  
-        </form>
-    </section>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="src/style.css">
+        <script src="/src/scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>To Do List</h1>
+        </header>
+        <main class="main">
+            <section class="section box">
+                <form action="">
+                    <h2>Add Items</h2>
+                    <div>
+                        <div>
+                            <label for="item"></label>
+                            <input type="text" id="item-name" name="item-name">
+                            <input id="button"type="Submit" value="Submit">
+                        </div>
+                </form>
+                <h2>Items</h2>
+                <ul class="item-container"></ul>
+            </section>
+        </main>
+        
+        
+    </body>
 </html>
