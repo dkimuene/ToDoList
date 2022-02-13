@@ -1,7 +1,6 @@
 //This is a function that hold all functions and event listeners 
-const listArr = [];
 function init () {
-    // This is the text field where you write your to dos
+    //This is the text field where you write your to dos
     const input = document.getElementById("item-name");
     //This is the submit button
     const button = document.getElementById('button');
@@ -21,7 +20,7 @@ button.addEventListener("click", (event) => {
     item.appendChild(itemName);
     item.className ="item";
     list.appendChild(item);
-
+    // This give the user the ability to remove items. 
     item.addEventListener("click", (event) => {
         let answer = confirm("Would you like to remove this item?");
         if(answer){
@@ -34,10 +33,3 @@ button.addEventListener("click", (event) => {
 //This will make sure we wait until everything is load on the page
 window.addEventListener("load", init);
 
-let listItem = document.querySelector(".item");
-
-console.log(listArr)
-// listItem.addEventListener('click', (event) => {
-//     console.log("Hello");
-    
-// });
